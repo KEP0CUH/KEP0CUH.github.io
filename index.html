@@ -13,8 +13,8 @@
   VK.init(function() {
      alert('init');
      
-     VS.addCallback('onWindowBlur', function(setting) { UnityHide(); });
-     VS.addCallback('onWindowFocus', function(setting) { UnityShow(); });
+     VK.addCallback('onWindowBlur', function(setting) { UnityHide(); });
+     VK.addCallback('onWindowFocus', function(setting) { UnityShow(); });
 function UnityShow()
 {
 	GetUnity().style.visibility = 'visible';
