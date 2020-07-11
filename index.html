@@ -14,7 +14,7 @@
      alert('init');
      
      VS.addCallback('onWindowBlur', function(setting) { UnityHide(); });
-     VS.addCallback('onWindowBlur', function(setting) { UnityShow(); });
+     VS.addCallback('onWindowFocus', function(setting) { UnityShow(); });
   }, function() {
 }, '5.120');
 </script>
