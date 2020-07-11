@@ -15,6 +15,8 @@
      
      VK.addCallback('onWindowBlur', function(setting) { UnityHide(); });
      VK.addCallback('onWindowFocus', function(setting) { UnityShow(); });
+  }, function() {
+}, '5.120')
 function UnityShow()
 {
 	GetUnity().style.visibility = 'visible';
@@ -23,9 +25,6 @@ function UnityShow()
 {
 	GetUnity().style.visibility = 'hidden';
 }
-  }, function() {
-}, '5.120')
-
 
 </script>
     <script>
