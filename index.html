@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+<script type="text/javascript">
+  VK.init(function() {
+     alert('init');
+  }, function() {
+     alert('success');
+}, '5.120');
+</script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/CompiledWEBGL.json", {onProgress: UnityProgress});
     </script>
