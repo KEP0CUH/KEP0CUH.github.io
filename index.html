@@ -15,9 +15,6 @@
      
      VS.addCallback('onWindowBlur', function(setting) { UnityHide(); });
      VS.addCallback('onWindowFocus', function(setting) { UnityShow(); });
-  }, function() {
-}, '5.120');
-
 function UnityShow()
 {
 	GetUnity().style.visibility = 'visible';
@@ -26,6 +23,10 @@ function UnityShow()
 {
 	GetUnity().style.visibility = 'hidden';
 }
+  }, function() {
+}, '5.120')
+
+
 </script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/CompiledWEBGL.json", {onProgress: UnityProgress});
